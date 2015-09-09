@@ -11,5 +11,6 @@ class Unit
   def attack!(enemy)
     enemy.damage(@attack_power)
   end
+  
 end
 unit = Unit.new(30,5)
