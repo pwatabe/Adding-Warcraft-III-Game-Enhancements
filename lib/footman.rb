@@ -11,7 +11,17 @@ class Footman < Unit
   def attack!(enemy)
     enemy.damage(@attack_power)
   end
+
   def damage(num)
     @health_points -= num
   end
+
+  def dead?
+    if @health_points >= 0
+      false
+    else
+      true
+    end  
+  end
+
 end
